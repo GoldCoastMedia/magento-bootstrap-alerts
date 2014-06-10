@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+    <tabs>
+        <goldcoastmedia translate="label" module="bootstrapalerts">
+            <label>Gold Coast Media</label>
+            <sort_order>100</sort_order>
+        </goldcoastmedia>
+    </tabs>
+
+    <sections>
+        <bootstrapalerts translate="label" module="bootstrapalerts">
+            <label>Bootstrap Alerts</label>
+            <tab>goldcoastmedia</tab>
+            <sort_order>10</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <general translate="label" module="bootstrapalerts">
+                    <label>Bootstrap Alerts Configuration</label>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <comment><![CDATA[Enable the use of Bootstrap Alerts. See <a href="http://getbootstrap.com/components/#alerts">alerts for Bootstrap 3</a> or <a href="http://getbootstrap.com/2.3.2/components.html#alerts">alerts for Bootstrap 2</a>]]></comment>
+                    <fields>
+                        <active translate="label">
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>10</sort_order>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </active>
+                        <bootstrap_version>
+                            <label>Version</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>20</sort_order>
+                            <source_model>bootstrapalerts_adminhtml/system_config_source_bootstrapversions</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </bootstrap_version>
+                    </fields>
+                </general>
+            </groups>
+        </bootstrapalerts>
+    </sections>
+</config>

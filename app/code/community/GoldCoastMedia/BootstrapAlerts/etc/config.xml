@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+    <!-- Module -->
+    <modules>
+        <GoldCoastMedia_BootstrapAlerts>
+            <version>0.1.1</version>
+        </GoldCoastMedia_BootstrapAlerts>
+    </modules>
+
+    <global>
+        <helpers>
+            <bootstrapalerts>
+                <class>GoldCoastMedia_BootstrapAlerts_Helper</class>
+            </bootstrapalerts>
+        </helpers>
+
+        <blocks>
+            <core>
+               <rewrite>
+                    <messages>GoldCoastMedia_BootstrapAlerts_Block_Messages</messages>
+                </rewrite>
+            </core>
+        </blocks>
+
+        <models>
+            <bootstrapalerts>
+                <class>GoldCoastMedia_BootstrapAlerts_Model</class>
+            </bootstrapalerts>
+
+             <bootstrapalerts_adminhtml>
+                <class>GoldCoastMedia_BootstrapAlerts_Adminhtml_Model</class>
+            </bootstrapalerts_adminhtml>
+        </models>
+    </global>
+
+    <!-- Default Configuration -->
+    <default>
+        <goldcoastmedia>
+            <general>
+                <active>1</active>
+            </general>
+        </goldcoastmedia>
+    </default>
+</config>
